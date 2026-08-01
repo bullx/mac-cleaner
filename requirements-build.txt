@@ -1,0 +1,9 @@
+# Packaging only — install into system/user Python (no venv).
+# Widgets-only: Essentials. Do NOT `pip install PySide6` (pulls Addons / WebEngine).
+#
+# Note: Essentials alone has no PySide6/__init__.py (namespace package).
+# setup.py stages a stub for py2app automatically — no meta-package needed.
+py2app>=0.28
+setuptools>=68
+PySide6-Essentials>=6.6
+send2trash>=1.8
